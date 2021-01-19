@@ -15,7 +15,7 @@ Za izradu projekta je korišćeno :<br />
 Visual Studio 2019 sa najnovijim .Net-om<br />
 <br />
 Neo4J distribuiran na vežbama. Verzija 3.3.0<br />
-Podešavanju su identična kao u verziji sa vežbi<br />
+Podešavanja su identična kao u verziji sa vežbi<br />
 default databaza se zove graph.db<br />
 username : neo4j<br />
 password : edukacija<br />
@@ -34,7 +34,7 @@ neo4j-admin load --from="D:\Database_Dump.dump" --database=graph.db --force<br /
 </pre>
 <br />
 <br />
-Više informacija o tome ako importovati dump u neo4j se mogu naći na sledećem linku:<br />
+Više informacija o tome kako importovati dump u neo4j se mogu naći na sledećem linku:<br />
 https://neo4j.com/docs/operations-manual/current/tools/dump-load/<br />
 <br />
 <br />
@@ -42,26 +42,29 @@ https://neo4j.com/docs/operations-manual/current/tools/dump-load/<br />
 Pokretanje projekta :<br />
 <br />
 1.<br />
-Prvo treba pokrenuti Neo4J kroz command prompt pozivom<br />
+Prvo treba pokrenuti Neo4J kroz command prompt<br />
 Kroz command prompt odemo u bin folder neo4j distribucije, a zatim pozovemo neo4j console<br />
 <br />
 2.<br />
+Pokrenemo visual studio solution fajl.
 U visual studio solution fajlu postoje dva projekta "Server" i "Client"<br />
 Prvo treba pokrenuti Server projekat<br />
 <br />
 3.<br />
-Sada možemo pokrenuti koliko kod želimo instanci "Client" projekta<br />
+Sada možemo pokrenuti koliko god želimo instanci "Client" projekta<br />
 <br />
 <br />
 <br />
 Dodatne informacije:<br />
 1.<br />
-Nakon prijavljivanja u nalog, imena prijatelja koji su trenutno online su obojeni zelenom bojom, dok su imena prijatelja koji su offline obojeni crnom bojom<br />
+Klikom na dugme find people se otvara prozor u čiji textbox možemo ukucati username ili deo username-a osobe koju tražimo.<br />
+Ako se pronađu nalozi sa sličnim ili istim imenom prikazaće se u listi ispod, nakon čega možemo izabrati nekoga sa liste pretrage i kliknuti na "Send Friend Request"<br />
 2.<br />
-Klikom na dugme find people se otvara prozor u čiji textbox možemo ukucati username ili deo username-a osobe kojui tražimo.<br />
-Ako onda postoji u databazi, prikazaće se u listi ispod, nakon čega moćemo izabrati nekoga sa liste pretrage i kliknuti na "Send Friend Request"<br />
+Imena prijatelja koji su trenutno online su obojeni zelenom bojom, dok su imena prijatelja koji su offline obojeni crnom bojom<br />
 3.<br />
-Moguće je uraditi double-click na ime prijatelja i time će se otvoriti prozor za listom prijatelja tog našeg prijatelja<br />
-4.<br />
+Moguće je uraditi double-click na ime prijatelja i time će se otvoriti prozor sa listom prijatelja tog našeg prijatelja<br />
+5.<br />
+Ako nam nije otvoren chat sa osobom koja nam je upravo poslala poruku, boja pozadine stavke u listi prijatelja će se promeniti<br />
+6.<br />
 Brisanjem nekoga iz naše liste prijatelja pokreće proceduru kojom se prvo brišu svi ChatEntry nodovi, CHAT_ENTRY relacije, Chat node, CHAT relacije i FRIEND relacije<br />
 izmedju dva Account node-a<br />
