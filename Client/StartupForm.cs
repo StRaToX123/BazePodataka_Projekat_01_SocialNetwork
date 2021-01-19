@@ -117,6 +117,11 @@ namespace Client
 
         public void ListBox1DrawItem(object sender, DrawItemEventArgs e)
         {
+            if (((ListBox)sender).Items.Count == 0)
+            {
+                return;
+            }
+
             string text = ((ListBox)sender).Items[e.Index].ToString();
             e.DrawBackground();
             using (Brush b = new SolidBrush(e.ForeColor)) e.Graphics.DrawString(text, e.Font, b, new RectangleF(e.Bounds.Left, e.Bounds.Top, e.Bounds.Width, e.Bounds.Height));
