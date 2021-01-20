@@ -1008,7 +1008,7 @@ namespace Client
 
         private void SendMessageSuccessful(string message)
         {
-            string[] messageTemp = message.Split('#'); // na nultoj poziciji je ime posiljaoca
+            string[] messageTemp = message.Split('#');
             List<string> chatCache;
             _perFriendChatHistory.TryGetValue(messageTemp[0], out chatCache);
 
