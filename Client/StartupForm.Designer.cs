@@ -316,6 +316,7 @@
             this.chatTextBox.Size = new System.Drawing.Size(476, 53);
             this.chatTextBox.TabIndex = 31;
             this.chatTextBox.Visible = false;
+            this.chatTextBox.TextChanged += new System.EventHandler(this.chatTextBox_TextChanged);
             // 
             // chatViewListBox
             // 

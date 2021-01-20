@@ -1037,7 +1037,17 @@ namespace Client
             _hub.Invoke("GetChatHistory", _selectedFriend, _perFriendChatHistory[_selectedFriend].Count);
         }
 
-        
+        private void chatTextBox_TextChanged(object sender, EventArgs e)
+        {
+            char[] SpecialChars = "@#$%^&".ToCharArray();
+            int indexOf = chatTextBox.Text.IndexOfAny(SpecialChars);
+            if (indexOf != -1)
+            {
+                chatTextBox.Text = chatTextBox.Text.Remove(chatTextBox.Text.Length - 1, 1);
+                chatTextBox.SelectionStart = chatTextBox.Text.Length;
+                chatTextBox.SelectionLength = 0;
+            }
+        }
     }
 
    
