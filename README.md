@@ -68,3 +68,5 @@ Ako nam nije otvoren chat sa osobom koja nam je upravo poslala poruku, boja poza
 6.<br />
 Brisanjem nekoga iz naše liste prijatelja pokreće proceduru kojom se prvo brišu svi ChatEntry nodovi, CHAT_ENTRY relacije, Chat node, CHAT relacije i FRIEND relacije<br />
 izmedju dva Account node-a<br />
+<br />
+<img src="https://i.imgur.com/dIBgxAb.png"/>
