@@ -10,6 +10,21 @@ Desktop aplikacija socijalne mreže. Korisnici mogu da kreiraju nalog, dodaju/br
 pretražuju prijatelje svojih prijatelja, razmenjuju poruke sa prijateljima u realnom vremenu kao i da pretražuju istoriju poruka."
 <br />
 <br />
+Pokretanje projekta :<br />
+<br />
+1.<br />
+Prvo treba pokrenuti Neo4J kroz command prompt<br />
+Kroz command prompt odemo u bin folder neo4j distribucije, a zatim pozovemo neo4j console<br />
+<br />
+2.<br />
+Pokrenemo visual studio solution fajl.
+U visual studio solution fajlu postoje dva projekta "Server" i "Client"<br />
+Prvo treba pokrenuti Server projekat<br />
+<br />
+3.<br />
+Sada možemo pokrenuti koliko god želimo instanci "Client" projekta<br />
+<br />
+<br />
 Za izradu projekta je korišćeno :<br />
 <br />
 Visual Studio 2019 sa najnovijim .Net-om<br />
@@ -37,21 +52,6 @@ neo4j-admin load --from="D:\Database_Dump.dump" --database=graph.db --force<br /
 Više informacija o tome kako importovati dump u neo4j se mogu naći na sledećem linku:<br />
 https://neo4j.com/docs/operations-manual/current/tools/dump-load/<br />
 <br />
-<br />
-<br />
-Pokretanje projekta :<br />
-<br />
-1.<br />
-Prvo treba pokrenuti Neo4J kroz command prompt<br />
-Kroz command prompt odemo u bin folder neo4j distribucije, a zatim pozovemo neo4j console<br />
-<br />
-2.<br />
-Pokrenemo visual studio solution fajl.
-U visual studio solution fajlu postoje dva projekta "Server" i "Client"<br />
-Prvo treba pokrenuti Server projekat<br />
-<br />
-3.<br />
-Sada možemo pokrenuti koliko god želimo instanci "Client" projekta<br />
 <br />
 <br />
 <br />
